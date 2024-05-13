@@ -3,7 +3,8 @@ import Link from "next/link"
 
 const Header = () => {
     return (
-        <header>
+
+        <header className="bg-inherit">
             <ul className="flex flex-row justify-evenly bg-indigo-500">
                 <nav>
                     <Link href="/" >Home</Link>

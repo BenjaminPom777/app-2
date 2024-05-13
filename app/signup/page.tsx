@@ -5,7 +5,12 @@ import { signupAction } from '@/actions/signupActions';
 
 
 const Signup = () => {
-    const [formState, formAction] = useFormState(signupAction, {})
+
+    const [formState, formAction] = useFormState(signupAction, {
+        userName: '',
+        email: '',
+        password: ''
+    })
 
     return (
         <div >
